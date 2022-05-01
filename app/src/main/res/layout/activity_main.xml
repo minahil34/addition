@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="200dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="first:"
+        android:paddingTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"/>
+
+
+
+    <EditText
+        android:id="@+id/firstField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+    android:paddingTop="50dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/one"/>
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="second:"
+        android:layout_below="@id/firstField"
+        android:paddingTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/sndField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:ems="10"
+        android:layout_below="@id/firstField"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/two"
+       />
+
+
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sndField"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:paddingTop="50dp"
+        android:text="output" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output"
+        android:text="ADD"
+        />
+</RelativeLayout>
